@@ -32,7 +32,7 @@ function insert(myobj) {
 
 
 function conection() {
-    mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost:27017/mongo-1', {
+    mongoose.connect(process.env.MONGODB_URL, {
         useNewUrlParser: true
     });
 }
