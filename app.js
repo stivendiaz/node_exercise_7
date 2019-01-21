@@ -22,7 +22,7 @@ function formatObject(name) {
 
 function insert(myobj) {
     var db = mongoose.connection;
-    db.collection("visitantes").insertOne(myobj, function (err, res) {
+    db.collection("Visitor").insertOne(myobj, function (err, res) {
         if (err) throw err;
         console.log("1 document inserted");
         db.close();
